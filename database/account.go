@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jerry-enebeli/blnk/model"
+	"github.com/northstar-pay/nucleus/model"
 )
 
 // CreateAccount inserts a new Account into the database

@@ -1,6 +1,6 @@
 package blnk
 
-import "github.com/jerry-enebeli/blnk/model"
+import "github.com/northstar-pay/nucleus/model"
 
 func (l *Blnk) CreateLedger(ledger model.Ledger) (model.Ledger, error) {
 	return l.datasource.CreateLedger(ledger)

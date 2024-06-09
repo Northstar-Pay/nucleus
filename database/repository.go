@@ -3,7 +3,7 @@ package database
 import (
 	"context"
 
-	"github.com/jerry-enebeli/blnk/model"
+	"github.com/northstar-pay/nucleus/model"
 )
 
 type IDataSource interface {

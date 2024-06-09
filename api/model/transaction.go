@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/jerry-enebeli/blnk/model"
+	"github.com/northstar-pay/nucleus/model"
 )
 
 type RecordTransaction struct {

@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	backups "github.com/jerry-enebeli/blnk/internal/pg-backups"
+	backups "github.com/northstar-pay/nucleus/internal/pg-backups"
 )
 
 func (a Api) BackupDB(c *gin.Context) {

@@ -3,10 +3,10 @@ package api
 import (
 	"net/http"
 
-	model2 "github.com/jerry-enebeli/blnk/api/model"
+	model2 "github.com/northstar-pay/nucleus/api/model"
 
 	"github.com/gin-gonic/gin"
-	"github.com/jerry-enebeli/blnk/model"
+	"github.com/northstar-pay/nucleus/model"
 )
 
 func (a Api) CreateBalance(c *gin.Context) {

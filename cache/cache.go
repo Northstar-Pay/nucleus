@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"time"
 
-	redis_db "github.com/jerry-enebeli/blnk/internal/redis-db"
+	redis_db "github.com/northstar-pay/nucleus/internal/redis-db"
 
-	"github.com/jerry-enebeli/blnk/config"
+	"github.com/northstar-pay/nucleus/config"
 
 	"github.com/go-redis/cache/v9"
 )

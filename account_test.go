@@ -7,9 +7,9 @@ import (
 
 	"github.com/brianvoe/gofakeit/v6"
 
-	"github.com/jerry-enebeli/blnk/model"
+	"github.com/northstar-pay/nucleus/model"
 
-	"github.com/jerry-enebeli/blnk/config"
+	"github.com/northstar-pay/nucleus/config"
 
 	"github.com/DATA-DOG/go-sqlmock"
 	"github.com/jarcoal/httpmock"

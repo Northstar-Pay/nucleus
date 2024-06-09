@@ -5,10 +5,10 @@ import (
 	"testing"
 
 	"github.com/brianvoe/gofakeit/v6"
-	model2 "github.com/jerry-enebeli/blnk/api/model"
-	"github.com/jerry-enebeli/blnk/internal/request"
+	model2 "github.com/northstar-pay/nucleus/api/model"
+	"github.com/northstar-pay/nucleus/internal/request"
 
-	"github.com/jerry-enebeli/blnk/model"
+	"github.com/northstar-pay/nucleus/model"
 
 	"github.com/stretchr/testify/assert"
 )

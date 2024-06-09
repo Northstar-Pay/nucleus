@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jerry-enebeli/blnk/config"
+	"github.com/northstar-pay/nucleus/config"
 
 	"github.com/stretchr/testify/assert"
 )

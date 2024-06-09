@@ -6,16 +6,14 @@ import (
 	"net/http"
 	"time"
 
-	pg_listener "github.com/jerry-enebeli/blnk/internal/pg-listener"
-
-	"github.com/jerry-enebeli/blnk"
+	pg_listener "github.com/northstar-pay/nucleus/internal/pg-listener"
 
 	"github.com/gin-gonic/gin"
 
 	"github.com/caddyserver/certmagic"
 
-	"github.com/jerry-enebeli/blnk/api"
-	"github.com/jerry-enebeli/blnk/config"
+	"github.com/northstar-pay/nucleus/api"
+	"github.com/northstar-pay/nucleus/config"
 	"github.com/spf13/cobra"
 )
 

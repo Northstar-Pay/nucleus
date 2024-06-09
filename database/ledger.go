@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/jerry-enebeli/blnk/model"
+	"github.com/northstar-pay/nucleus/model"
 )
 
 func (d Datasource) CreateLedger(ledger model.Ledger) (model.Ledger, error) {

@@ -8,16 +8,15 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/jerry-enebeli/blnk/internal/request"
+	"github.com/northstar-pay/nucleus/internal/request"
 
 	"github.com/brianvoe/gofakeit/v6"
-	model2 "github.com/jerry-enebeli/blnk/api/model"
+	model2 "github.com/northstar-pay/nucleus/api/model"
 
-	"github.com/jerry-enebeli/blnk/config"
-	"github.com/jerry-enebeli/blnk/model"
+	"github.com/northstar-pay/nucleus/config"
+	"github.com/northstar-pay/nucleus/model"
 
-	"github.com/jerry-enebeli/blnk"
-	"github.com/jerry-enebeli/blnk/database"
+	"github.com/northstar-pay/nucleus/database"
 
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"

@@ -16,7 +16,7 @@ import (
 
 	"github.com/aws/aws-sdk-go-v2/credentials"
 
-	"github.com/jerry-enebeli/blnk/config"
+	"github.com/northstar-pay/nucleus/config"
 
 	"github.com/aws/aws-sdk-go-v2/aws"
 	awsconfig "github.com/aws/aws-sdk-go-v2/config"

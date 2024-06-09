@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/jerry-enebeli/blnk/internal/request"
+	"github.com/northstar-pay/nucleus/internal/request"
 	"github.com/sirupsen/logrus"
 
-	"github.com/jerry-enebeli/blnk/config"
+	"github.com/northstar-pay/nucleus/config"
 )
 
 func SlackNotification(err error) {

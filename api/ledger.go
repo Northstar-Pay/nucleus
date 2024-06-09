@@ -3,7 +3,7 @@ package api
 import (
 	"net/http"
 
-	model2 "github.com/jerry-enebeli/blnk/api/model"
+	model2 "github.com/northstar-pay/nucleus/api/model"
 
 	"github.com/gin-gonic/gin"
 )

@@ -5,13 +5,12 @@ import (
 	"log"
 	"os"
 
-	"github.com/jerry-enebeli/blnk/internal/notification"
+	"github.com/northstar-pay/nucleus/internal/notification"
 
-	"github.com/jerry-enebeli/blnk"
-	"github.com/jerry-enebeli/blnk/database"
+	"github.com/northstar-pay/nucleus/database"
 	"github.com/sirupsen/logrus"
 
-	"github.com/jerry-enebeli/blnk/config"
+	"github.com/northstar-pay/nucleus/config"
 	"github.com/spf13/cobra"
 )
 

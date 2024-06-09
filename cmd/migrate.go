@@ -4,10 +4,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/jerry-enebeli/blnk/config"
-	"github.com/jerry-enebeli/blnk/database"
+	"github.com/northstar-pay/nucleus/config"
+	"github.com/northstar-pay/nucleus/database"
 
-	"github.com/jerry-enebeli/blnk"
 	migrate "github.com/rubenv/sql-migrate"
 	"github.com/spf13/cobra"
 )

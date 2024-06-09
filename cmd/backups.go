@@ -1,7 +1,7 @@
 package main
 
 import (
-	backups "github.com/jerry-enebeli/blnk/internal/pg-backups"
+	backups "github.com/northstar-pay/nucleus/internal/pg-backups"
 
 	"github.com/sirupsen/logrus"
 
