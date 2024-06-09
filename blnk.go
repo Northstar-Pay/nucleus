@@ -7,10 +7,10 @@ import (
 
 	"github.com/typesense/typesense-go/typesense/api"
 
-	"github.com/jerry-enebeli/blnk/config"
-	"github.com/jerry-enebeli/blnk/database"
-	redis_db "github.com/jerry-enebeli/blnk/internal/redis-db"
-	"github.com/jerry-enebeli/blnk/model"
+	"github.com/northstar-pay/nucleus/config"
+	"github.com/northstar-pay/nucleus/database"
+	redis_db "github.com/northstar-pay/nucleus/internal/redis-db"
+	"github.com/northstar-pay/nucleus/model"
 	"github.com/redis/go-redis/v9"
 )
 

@@ -9,11 +9,9 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
-	"github.com/jerry-enebeli/blnk"
+	"github.com/northstar-pay/nucleus/config"
 
-	"github.com/jerry-enebeli/blnk/config"
-
-	"github.com/jerry-enebeli/blnk/model"
+	"github.com/northstar-pay/nucleus/model"
 
 	"github.com/hibiken/asynq"
 )

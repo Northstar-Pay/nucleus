@@ -3,9 +3,9 @@ package blnk
 import (
 	"fmt"
 
-	"github.com/jerry-enebeli/blnk/internal/notification"
+	"github.com/northstar-pay/nucleus/internal/notification"
 
-	"github.com/jerry-enebeli/blnk/model"
+	"github.com/northstar-pay/nucleus/model"
 )
 
 func NewBalanceTracker() *model.BalanceTracker {

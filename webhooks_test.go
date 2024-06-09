@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/alicebob/miniredis/v2"
-	"github.com/jerry-enebeli/blnk/config"
+	"github.com/northstar-pay/nucleus/config"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

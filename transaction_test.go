@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jerry-enebeli/blnk/model"
+	"github.com/northstar-pay/nucleus/model"
 
 	"github.com/brianvoe/gofakeit/v6"
 

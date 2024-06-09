@@ -6,7 +6,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/jerry-enebeli/blnk/model"
+	"github.com/northstar-pay/nucleus/model"
 
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 )

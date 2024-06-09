@@ -8,7 +8,7 @@ import (
 
 	"go.opentelemetry.io/otel"
 
-	"github.com/jerry-enebeli/blnk/model"
+	"github.com/northstar-pay/nucleus/model"
 
 	_ "github.com/go-sql-driver/mysql"
 	_ "github.com/lib/pq"

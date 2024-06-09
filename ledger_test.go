@@ -8,13 +8,13 @@ import (
 
 	"github.com/brianvoe/gofakeit/v6"
 
-	"github.com/jerry-enebeli/blnk/cache"
+	"github.com/northstar-pay/nucleus/cache"
 
-	"github.com/jerry-enebeli/blnk/model"
+	"github.com/northstar-pay/nucleus/model"
 
-	"github.com/jerry-enebeli/blnk/config"
+	"github.com/northstar-pay/nucleus/config"
 
-	"github.com/jerry-enebeli/blnk/database"
+	"github.com/northstar-pay/nucleus/database"
 
 	"github.com/DATA-DOG/go-sqlmock"
 	"github.com/stretchr/testify/assert"
