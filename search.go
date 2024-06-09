@@ -14,7 +14,7 @@ import (
 
 	"github.com/typesense/typesense-go/typesense"
 
-	"github.com/jerry-enebeli/blnk/model"
+	"github.com/northstar-pay/nucleus/model"
 )
 
 type TypesenseClient struct {

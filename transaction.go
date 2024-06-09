@@ -9,14 +9,14 @@ import (
 	"sync"
 	"time"
 
-	redlock "github.com/jerry-enebeli/blnk/internal/lock"
-	"github.com/jerry-enebeli/blnk/internal/notification"
+	redlock "github.com/northstar-pay/nucleus/internal/lock"
+	"github.com/northstar-pay/nucleus/internal/notification"
 	"go.opentelemetry.io/otel/trace"
 
 	"github.com/sirupsen/logrus"
 	"go.opentelemetry.io/otel"
 
-	"github.com/jerry-enebeli/blnk/model"
+	"github.com/northstar-pay/nucleus/model"
 )
 
 var (

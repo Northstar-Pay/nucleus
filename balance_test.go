@@ -10,7 +10,7 @@ import (
 
 	"github.com/brianvoe/gofakeit/v6"
 
-	"github.com/jerry-enebeli/blnk/model"
+	"github.com/northstar-pay/nucleus/model"
 
 	"github.com/DATA-DOG/go-sqlmock"
 	"github.com/stretchr/testify/assert"

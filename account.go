@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/jerry-enebeli/blnk/internal/request"
+	"github.com/northstar-pay/nucleus/internal/request"
 
-	"github.com/jerry-enebeli/blnk/model"
+	"github.com/northstar-pay/nucleus/model"
 
-	"github.com/jerry-enebeli/blnk/config"
+	"github.com/northstar-pay/nucleus/config"
 )
 
 func applyExternalAccount(account *model.Account) error {

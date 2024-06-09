@@ -6,8 +6,8 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	model2 "github.com/jerry-enebeli/blnk/api/model"
-	"github.com/jerry-enebeli/blnk/model"
+	model2 "github.com/northstar-pay/nucleus/api/model"
+	"github.com/northstar-pay/nucleus/model"
 
 	"github.com/gin-gonic/gin"
 )
