@@ -5,9 +5,9 @@ import (
 	"log"
 	"sync"
 
-	"github.com/jerry-enebeli/blnk/cache"
+	"github.com/northstar-pay/nucleus/cache"
 
-	"github.com/jerry-enebeli/blnk/config"
+	"github.com/northstar-pay/nucleus/config"
 )
 
 // Declare a package-level variable to hold the singleton instance.

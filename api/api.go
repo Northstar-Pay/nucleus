@@ -6,12 +6,11 @@ import (
 
 	"github.com/typesense/typesense-go/typesense/api"
 
-	"github.com/jerry-enebeli/blnk/config"
+	"github.com/northstar-pay/nucleus/config"
 
-	"github.com/jerry-enebeli/blnk/api/middleware"
+	"github.com/northstar-pay/nucleus/api/middleware"
 
 	"github.com/gin-gonic/gin"
-	"github.com/jerry-enebeli/blnk"
 )
 
 type Api struct {

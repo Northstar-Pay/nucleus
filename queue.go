@@ -8,10 +8,10 @@ import (
 	"log"
 	"time"
 
-	"github.com/jerry-enebeli/blnk/config"
+	"github.com/northstar-pay/nucleus/config"
 
 	"github.com/hibiken/asynq"
-	"github.com/jerry-enebeli/blnk/model"
+	"github.com/northstar-pay/nucleus/model"
 )
 
 const TRANSACTION_QUEUE = "new:transaction"
