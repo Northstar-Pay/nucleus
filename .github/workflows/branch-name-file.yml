@@ -1,0 +1,23 @@
+﻿name: Branch Name Check
+
+on:
+  push:
+    branches-ignore:
+      - 'main'
+      - 'master'
+
+jobs:
+  check-branch-name:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Check branch name
+        run: |
+          BRANCH_NAME="${GITHUB_REF#refs/heads/}"
+          if [[ ! "$BRANCH_NAME" =~ ^(hotfix|bugfix|feature)/.*$ ]]; then
+            echo "Branch name must start with 'hotfix/', 'bugfix/', or 'feature/'"
+            exit 1
+          fi
