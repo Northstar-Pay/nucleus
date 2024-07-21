@@ -102,6 +102,8 @@ func loadConfigFromFile(file string) error {
 		log.Println("config json not passed, will use env variables")
 	}
 
+	log.Println("config json is being loaded")
+
 	// override config from environment variables
 	err = envconfig.Process("blnk", &cnf)
 	if err != nil {
@@ -177,6 +179,7 @@ func (cnf *Configuration) validateAndAddDefaults() error {
 	cnf.Server.Port = strings.TrimSpace(cnf.Server.Port)
 	cnf.DataSource.Dns = strings.TrimSpace(cnf.DataSource.Dns)
 	cnf.Redis.Dns = strings.TrimSpace(cnf.Redis.Dns)
+	cnf.Redis.Password = strings.TrimSpace(cnf.Redis.Password)
 
 	// Set default value for Port if it's empty
 	if cnf.Server.Port == "" {
