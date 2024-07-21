@@ -3,7 +3,6 @@ package config
 import (
 	"encoding/json"
 	"errors"
-	"fmt"
 	"log"
 	"os"
 	"strings"
@@ -178,8 +177,6 @@ func (cnf *Configuration) validateAndAddDefaults() error {
 	cnf.Server.Port = strings.TrimSpace(cnf.Server.Port)
 	cnf.DataSource.Dns = strings.TrimSpace(cnf.DataSource.Dns)
 	cnf.Redis.Dns = strings.TrimSpace(cnf.Redis.Dns)
-
-	log.Println(fmt.Sprintf("Redis Password: %s", cnf.Redis.Password))
 
 	// Set default value for Port if it's empty
 	if cnf.Server.Port == "" {
