@@ -24,7 +24,7 @@ func NewCache() (Cache, error) {
 	if err != nil {
 		return nil, err
 	}
-	ca, err := newRedisCache([]string{fmt.Sprintf("redis://%s", cfg.Redis.Dns)})
+	ca, err := newRedisCache([]string{fmt.Sprintf("redis://%s", cfg.Redis.Dns)}, cfg.Redis.Password)
 	if err != nil {
 		return nil, err
 	}
@@ -37,8 +37,8 @@ type RedisCache struct {
 	cache *cache.Cache
 }
 
-func newRedisCache(addresses []string) (*RedisCache, error) {
-	client, err := redis_db.NewRedisClient(addresses)
+func newRedisCache(addresses []string, password string) (*RedisCache, error) {
+	client, err := redis_db.NewRedisClient(addresses, password)
 	if err != nil {
 		return nil, err
 	}

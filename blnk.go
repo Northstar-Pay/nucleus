@@ -34,7 +34,7 @@ func NewBlnk(db database.IDataSource) (*Blnk, error) {
 	if err != nil {
 		return nil, err
 	}
-	redisClient, err := redis_db.NewRedisClient([]string{fmt.Sprintf("redis://%s", configuration.Redis.Dns)})
+	redisClient, err := redis_db.NewRedisClient([]string{fmt.Sprintf("redis://%s", configuration.Redis.Dns)}, configuration.Redis.Password)
 	if err != nil {
 		return nil, err
 	}

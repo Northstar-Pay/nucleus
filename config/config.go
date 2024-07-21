@@ -33,7 +33,8 @@ type DataSourceConfig struct {
 }
 
 type RedisConfig struct {
-	Dns string `json:"dns" envconfig:"BLNK_REDIS_DNS"`
+	Dns      string `json:"dns" envconfig:"BLNK_REDIS_DNS"`
+	Password string `json:"password" envconfig:"BLNK_REDIS_PASSWORD"`
 }
 
 type TypeSenseConfig struct {

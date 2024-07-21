@@ -11,7 +11,7 @@ type Redis struct {
 	client    redis.UniversalClient
 }
 
-func NewRedisClient(addresses []string) (*Redis, error) {
+func NewRedisClient(addresses []string, password string) (*Redis, error) {
 	if len(addresses) == 0 {
 		return nil, errors.New("redis addresses list cannot be empty")
 	}
@@ -24,11 +24,22 @@ func NewRedisClient(addresses []string) (*Redis, error) {
 			return nil, err
 		}
 
+		if password != "" {
+			opts.Password = password
+		}
+
 		client = redis.NewClient(opts)
 	} else {
-		client = redis.NewUniversalClient(&redis.UniversalOptions{
+
+		opt := &redis.UniversalOptions{
 			Addrs: addresses,
-		})
+		}
+
+		if password != "" {
+			opt.Password = password
+		}
+
+		client = redis.NewUniversalClient(opt)
 	}
 
 	return &Redis{addresses: addresses, client: client}, nil
