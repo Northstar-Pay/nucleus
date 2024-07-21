@@ -2,9 +2,6 @@ package redis_db
 
 import (
 	"errors"
-	"fmt"
-	"log"
-
 	"github.com/redis/go-redis/v9"
 )
 
@@ -27,8 +24,6 @@ func NewRedisClient(addresses []string, password string) (*Redis, error) {
 		}
 
 		opts.Password = password
-
-		log.Println(fmt.Sprintf("Connecting to redis at %s with password %s", addresses[0], password))
 
 		client = redis.NewClient(opts)
 	} else {
