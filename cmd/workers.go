@@ -82,7 +82,7 @@ func workerCommands(b *blnkInstance) *cobra.Command {
 			}
 
 			srv := asynq.NewServer(
-				asynq.RedisClientOpt{Addr: conf.Redis.Dns},
+				asynq.RedisClientOpt{Addr: conf.Redis.Dns, Password: conf.Redis.Password},
 				asynq.Config{
 					Concurrency: 1,
 					Queues:      queues,
