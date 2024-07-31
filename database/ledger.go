@@ -21,7 +21,7 @@ func (d Datasource) CreateLedger(ledger model.Ledger) (model.Ledger, error) {
 
 	// insert into database
 	_, err = d.Conn.Exec(`
-		INSERT INTO ledgers (meta_data, name, ledger_id)
+		INSERT INTO blnk.ledgers (meta_data, name, ledger_id)
 		VALUES ($1, $2,$3)
 
 	`, metaDataJSON, ledger.Name, ledger.LedgerID)
