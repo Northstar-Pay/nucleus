@@ -29,8 +29,8 @@ type TransactionTypePayload struct {
 }
 
 func NewQueue(conf *config.Configuration) *Queue {
-	client := asynq.NewClient(asynq.RedisClientOpt{Addr: conf.Redis.Dns})
-	inspector := asynq.NewInspector(asynq.RedisClientOpt{Addr: conf.Redis.Dns})
+	client := asynq.NewClient(asynq.RedisClientOpt{Addr: conf.Redis.Dns, Password: conf.Redis.Password})
+	inspector := asynq.NewInspector(asynq.RedisClientOpt{Addr: conf.Redis.Dns, Password: conf.Redis.Password})
 	return &Queue{
 		Client:    client,
 		Inspector: inspector,
