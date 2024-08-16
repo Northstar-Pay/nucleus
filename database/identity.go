@@ -73,7 +73,7 @@ func (d Datasource) GetIdentityByID(id string) (*model.Identity, error) {
 func (d Datasource) GetAllIdentities() ([]model.Identity, error) {
 	rows, err := d.Conn.Query(`
 	SELECT identity_id, identity_type, first_name, last_name, other_names, gender, dob, email_address, phone_number, nationality, organization_name, category, street, country, state, post_code, city, created_at, meta_data
-	FROM identity
+	FROM blnk.identity
 	ORDER BY created_at DESC
 `)
 	if err != nil {
@@ -114,7 +114,7 @@ func (d Datasource) UpdateIdentity(identity *model.Identity) error {
 	}
 
 	_, err = d.Conn.Exec(`
-		UPDATE identity
+		UPDATE blnk.identity
 		SET identity_type = $2, first_name = $3, last_name = $4, other_names = $5, gender = $6, dob = $7, email_address = $8, phone_number = $9, nationality = $10, organization_name = $11, category = $12, street = $13, country = $14, state = $15, post_code = $16, city = $17, created_at = $18, meta_data = $19
 		WHERE identity_id = $1
 	`, identity.IdentityID, identity.IdentityType, identity.FirstName, identity.LastName, identity.OtherNames, identity.Gender, identity.DOB, identity.EmailAddress, identity.PhoneNumber, identity.Nationality, identity.OrganizationName, identity.Category, identity.Street, identity.Country, identity.State, identity.PostCode, identity.City, identity.CreatedAt, metaDataJSON)
@@ -125,7 +125,7 @@ func (d Datasource) UpdateIdentity(identity *model.Identity) error {
 // DeleteIdentity deletes an identity from the database by ID
 func (d Datasource) DeleteIdentity(id string) error {
 	_, err := d.Conn.Exec(`
-		DELETE FROM identity
+		DELETE FROM blnk.identity
 		WHERE identity_id = $1
 	`, id)
 	return err
