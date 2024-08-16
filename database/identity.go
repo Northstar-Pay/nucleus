@@ -19,7 +19,7 @@ func (d Datasource) CreateIdentity(identity model.Identity) (model.Identity, err
 	identity.CreatedAt = time.Now()
 
 	_, err = d.Conn.Exec(`
-		INSERT INTO identity (identity_id,identity_type, first_name, last_name, other_names, gender, dob, email_address, phone_number, nationality, organization_name, category, street, country, state, post_code, city, created_at, meta_data)
+		INSERT INTO blnk.identity (identity_id,identity_type, first_name, last_name, other_names, gender, dob, email_address, phone_number, nationality, organization_name, category, street, country, state, post_code, city, created_at, meta_data)
 		VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19)
 	`, identity.IdentityID, identity.IdentityType, identity.FirstName, identity.LastName, identity.OtherNames, identity.Gender, identity.DOB, identity.EmailAddress, identity.PhoneNumber, identity.Nationality, identity.OrganizationName, identity.Category, identity.Street, identity.Country, identity.State, identity.PostCode, identity.City, identity.CreatedAt, metaDataJSON)
 
@@ -38,7 +38,7 @@ func (d Datasource) GetIdentityByID(id string) (*model.Identity, error) {
 
 	row := tx.QueryRow(`
 	SELECT identity_id, identity_type, first_name, last_name, other_names, gender, dob, email_address, phone_number, nationality, organization_name, category, street, country, state, post_code, city, created_at, meta_data
-	FROM identity
+	FROM blnk.identity
 	WHERE identity_id = $1
 `, id)
 
