@@ -50,6 +50,23 @@ func (b *CreateBalance) ValidateCreateBalance() error {
 	)
 }
 
+func (b *BalanceByIndicator) ValidateCreateBalanceByIndicator() error {
+	return validation.ValidateStruct(b,
+		validation.Field(&b.Indicator, validation.Required),
+		validation.Field(b.Indicator, validation.By(func(value interface{}) error {
+			indicator, ok := value.(string)
+			if !ok {
+				return errors.New("invalid type for indicator")
+			}
+			if indicator[0] != '@' {
+				return errors.New("indicator must start with @")
+			}
+			return nil
+		})),
+		validation.Field(&b.Currency, validation.Required),
+	)
+}
+
 func (b *CreateBalanceMonitor) ValidateCreateBalanceMonitor() error {
 	return validation.ValidateStruct(b,
 		validation.Field(&b.BalanceId, validation.Required),

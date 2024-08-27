@@ -27,6 +27,7 @@ func (a Api) Router() *gin.Engine {
 
 	router.POST("/balances", a.CreateBalance)
 	router.GET("/balances/:id", a.GetBalance)
+	router.POST("/balances/indicator", a.BalanceByIndicator)
 
 	router.POST("/balance-monitors", a.CreateBalanceMonitor)
 	router.GET("/balance-monitors/:id", a.GetBalanceMonitor)

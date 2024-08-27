@@ -9,6 +9,30 @@ import (
 	"github.com/northstar-pay/nucleus/model"
 )
 
+func (a Api) BalanceByIndicator(c *gin.Context) {
+	var newBalance model2.BalanceByIndicator
+
+	if err := c.ShouldBindJSON(&newBalance); err != nil {
+		return
+	}
+
+	err := newBalance.ValidateCreateBalanceByIndicator()
+
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+
+	resp, err := a.blnk.GetBalanceByIndicator(newBalance.Indicator, newBalance.Currency)
+
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+
+	c.JSON(http.StatusOK, resp)
+}
+
 func (a Api) CreateBalance(c *gin.Context) {
 	var newBalance model2.CreateBalance
 	if err := c.ShouldBindJSON(&newBalance); err != nil {

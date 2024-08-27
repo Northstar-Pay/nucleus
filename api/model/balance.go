@@ -8,6 +8,11 @@ type CreateBalance struct {
 	MetaData   map[string]interface{} `json:"meta_data"`
 }
 
+type BalanceByIndicator struct {
+	Indicator string `json:"indicator"`
+	Currency  string `json:"currency"`
+}
+
 type CreateBalanceMonitor struct {
 	BalanceId   string                 `json:"balance_id"`
 	Condition   MonitorCondition       `json:"condition"`

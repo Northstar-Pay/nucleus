@@ -65,6 +65,10 @@ func (l *Blnk) CreateBalance(balance model.Balance) (model.Balance, error) {
 	return l.datasource.CreateBalance(balance)
 }
 
+func (l *Blnk) GetBalanceByIndicator(indicator, currency string) (*model.Balance, error) {
+	return l.datasource.GetBalanceByIndicator(indicator, currency)
+}
+
 func (l *Blnk) GetBalanceByID(id string, include []string) (*model.Balance, error) {
 	return l.datasource.GetBalanceByID(id, include)
 }
